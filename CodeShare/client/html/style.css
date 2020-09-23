@@ -1,0 +1,105 @@
+	body {
+		border-top-style: none; 
+		border-right-style: none; 
+		border-left-style: none; 
+		border-bottom-style: none; 		
+		scrollbar-arrow-color: #86859B;
+		scrollbar-darkshadow-color: #c0c0c0;
+		scrollbar-face-color: #EEEFF2;
+		scrollbar-highlight-color: #798195;
+		scrollbar-shadow-color: #798195;
+		scrollbar-track-color: #D0D0D0;
+		cursor: default;
+
+	}
+	
+	.tabselected {
+		FONT-WEIGHT: normal; 
+		FONT-SIZE: 11px; 				
+		VERTICAL-ALIGN: middle; 
+		COLOR: #2E143B; 
+		FONT-STYLE: normal; 
+		FONT-FAMILY: MS Reference Sans Serif; 
+		HEIGHT: 22px; 
+		BACKGROUND-COLOR: #C0C0C0;
+		BORDER-LEFT: #B0B8CA 1px solid;
+		BORDER-TOP: #000000 1px solid;
+	}
+	
+	.tab {
+		BORDER-TOP: #000000 1px solid; 
+		FONT-WEIGHT: normal; 
+		FONT-SIZE: 11px; 				
+		VERTICAL-ALIGN: middle; 
+		COLOR: #e3e4e2; 
+		FONT-STYLE: normal; 
+		FONT-FAMILY: MS Reference Sans Serif; 
+		HEIGHT: 22px; 
+		BACKGROUND-COLOR: #000000;
+		BORDER-LEFT: #B0B8CA 1px solid;
+		BORDER-TOP: #000000 1px solid;
+	}
+	
+	.menutitle {
+		BACKGROUND-IMAGE: url(images\menutitle.bmp);
+		FONT-SIZE: 10px; 			
+		COLOR: #ffffff; 
+		FONT-STYLE: normal; 
+		FONT-FAMILY: MS Reference Sans Serif; 
+	}
+	
+	.menuhover {
+		BACKGROUND-IMAGE: url(images\menuhover.bmp);
+		FONT-SIZE: 10px; 			
+		COLOR: #ffffff; 
+		FONT-STYLE: normal; 
+		FONT-FAMILY: MS Reference Sans Serif; 
+	}
+	
+	.button {
+		FONT-SIZE: 10px; 			
+		COLOR: navy; 
+		FONT-STYLE: normal; 
+		FONT-FAMILY: MS Reference Sans Serif; 
+		BACKGROUND-COLOR: #EFEFEF;
+	}
+	
+	.buttonhover {
+		FONT-SIZE: 10px; 			
+		COLOR: navy; 
+		FONT-STYLE: normal; 
+		FONT-FAMILY: MS Reference Sans Serif; 
+		BACKGROUND-COLOR: #D0D0D0;
+	}
+	
+	.buttonpress {
+		FONT-SIZE: 10px; 			
+		COLOR: navy; 
+		FONT-STYLE: normal; 
+		FONT-FAMILY: MS Reference Sans Serif; 
+		BACKGROUND-COLOR: #A1ABC4;
+	}
+	
+	.menulink {
+		FONT-SIZE: 11px; 			
+		COLOR: e3e4e2; 
+		FONT-STYLE: normal; 
+		FONT-FAMILY: MS Reference Sans Serif; 
+	}
+	
+	.box {
+		BACKGROUND-COLOR: #FFFFFF;
+	}
+	
+	.boxhover{
+		BACKGROUND-COLOR: #CED4E2;
+	}
+	
+	.buttondisabled {
+		FONT-SIZE: 10px; 			
+		COLOR: gray; 
+		FONT-STYLE: normal; 
+		FONT-FAMILY: MS Reference Sans Serif; 
+		BACKGROUND-COLOR: #EFEFEF;
+	}
+	

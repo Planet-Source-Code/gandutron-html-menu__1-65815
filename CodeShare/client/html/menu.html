@@ -1,0 +1,334 @@
+<HTML>
+	<link rel="stylesheet" type="text/css" href="style.css" />
+	
+	<script language=JavaScript>
+		function buttonhover(buttonName){
+			if (document.getElementById(buttonName).className!="buttondisabled"){
+				document.getElementById(buttonName).className="buttonhover";
+			}			
+		}
+		
+		function buttonleave(buttonName){
+			if (document.getElementById(buttonName).className!="buttondisabled"){
+				document.getElementById(buttonName).className="button";
+			}
+		}
+		
+		function buttonpress(buttonName){
+			if (document.getElementById(buttonName).className!="buttondisabled"){
+				document.getElementById(buttonName).className="buttonpress";
+			}
+		}
+		
+		function buttonup(buttonName, command){
+			if (document.getElementById(buttonName).className!="buttondisabled"){
+				document.getElementById(buttonName).className="buttonhover";
+				
+				window.location.href="command:" + command;
+			}
+		}
+		
+		function menuhover(menuTitle){
+			document.getElementById(menuTitle).className="menuhover";
+		}
+		
+		function menuleave(menuTitle){
+			document.getElementById(menuTitle).className="menutitle";
+		}
+		
+	</script>
+	
+	<BODY topmargin=5 rightmargin=0 leftmargin=0 bottommargin=0  bgColor=#000000>
+	
+		<table cellpadding=0 cellspacing=0 height=12>
+			<tr>
+				<td>
+					<table>
+						<tr>
+							<td align=middle valign=middle width=3>
+								<img src=images/spacer.gif border=0>
+							</td>
+				
+							<td align=middle valign=middle class=menulink >
+								<img src=images/save.ico border=0 align=middle>
+							</td>
+								<td align=middle valign=middle class=menulink>
+								<img src=images/undo.ico border=0 align=middle>
+							</td>
+							
+							<td align=middle valign=middle width=5>
+								<img src=images/spacer.gif border=0>
+							</td>
+					
+						</tr>
+					</table>
+				</td>
+
+				<td align=middle valign=middle>
+					<img src=images/spacer.gif border=0>
+				</td>
+				<td class="tabselected" width=100 align=middle valign=middle>
+					Browser
+				</td>
+				
+				<td class="tab" width=100 align=middle valign=middle>
+					Edit Tools
+				</td>
+				
+				<td class="tab" width=100 align=middle valign=middle>
+					Administration
+				</td>
+				
+				<td class="tab" align=middle valign=middle>
+					<img src=images/spacer.gif border=0>
+				</td>
+			</tr>
+		</table>
+	
+	
+		<table bgcolor=#C0C0C0 width="100%" height=90 cellpadding=1 cellspacing=1>
+			<tr>
+				<td>
+					<table height=100% width=100%>
+											
+						<tr>
+							<td class=button>
+								<table cellpadding=1 cellspacing =0  onmouseover="javascript:menuhover('menuFolder')" onmouseout="javascript:menuleave('menuFolder')">
+									<tr>
+										<td valign=center align=center>
+											<table class=button cellpadding=0 cellspacing=0 onmouseover="javascript:buttonhover('btnFolderNew');" onmousedown="javascript:buttonpress('btnFolderNew');" onmouseup="javascript:buttonup('btnFolderNew','btnFolderNew');" onmouseout="javascript:buttonleave('btnFolderNew');" id="btnFolderNew">
+												<tr>
+													<td>
+														<img src=images/spacer.gif width=3>
+													</td>
+													<td valign=middle align=center>
+														<img src=images/folder.ico border=0>
+													</td>
+												</tr>
+												<tr>
+													<td>
+														<img src=images/spacer.gif width=3>
+													</td>
+													<td valign=middle align=center>
+														New<br>Folder&nbsp;
+													</td>
+												</tr>
+											</table>
+										</td>
+										<td valign=middle align=center>
+											<table cellpadding=0 cellspacing=0 class=button>
+												<tr onmouseover="javascript:buttonhover('btnFolderDelete');" onmousedown="javascript:buttonpress('btnFolderDelete');" onmouseup="javascript:buttonup('btnFolderDelete','btnFolderDelete');" onmouseout="javascript:buttonleave('btnFolderDelete');" id="btnFolderDelete" class=button>
+													<td>&nbsp;&nbsp;<img src=images/deletefolder.ico border=0></td>
+													<td>&nbsp;&nbsp;Delete&nbsp;&nbsp;</td>
+												</tr>
+												<tr onmouseover="javascript:buttonhover('btnFolderRename');" onmousedown="javascript:buttonpress('btnFolderRename');" onmouseup="javascript:buttonup('btnFolderRename','btnFolderRename');" onmouseout="javascript:buttonleave('btnFolderRename');" id="btnFolderRename" class=button>
+													<td>&nbsp;&nbsp;<img src=images/rename.ico border=0></td>
+													<td>&nbsp;&nbsp;Rename&nbsp;...&nbsp;&nbsp;</td>
+												</tr>
+												<tr onmouseover="javascript:buttonhover('btnFolderMove');" onmousedown="javascript:buttonpress('btnFolderMove');" onmouseup="javascript:buttonup('btnFolderMove','btnFolderMove');" onmouseout="javascript:buttonleave('btnFolderMove');" id="btnFolderMove" class=button>
+													<td>&nbsp;&nbsp;<img src=images/move.ico border=0></td>
+													<td>&nbsp;&nbsp;Move&nbsp;To&nbsp;...&nbsp;&nbsp;</td>
+												</tr>												
+											</table>								
+										</td>
+									<tr>
+								</table>
+							</td>
+											
+							<td class=button>
+								<table cellpadding=1 cellspacing=0  onmouseover="javascript:menuhover('menuFile')" onmouseout="javascript:menuleave('menuFile')"> 
+									<tr>
+										<td>
+											<table onmouseover="javascript:buttonhover('btnNewFile');" onmousedown="javascript:buttonpress('btnNewFile');" onmouseup="javascript:buttonup('btnNewFile','btnNewFile');" onmouseout="javascript:buttonleave('btnNewFile');" id="btnNewFile" class=button cellpadding=0 cellspacing=0>
+												<tr>
+													<td>
+														<img src=images/spacer.gif width=3>
+													</td>
+													<td valign=middle align=center>
+														<img border=0 src=images/new.ico>
+													</td>
+												</tr>
+												<tr>
+													<td>
+														<img src=images/spacer.gif width=3>
+													</td>
+													<td valign=middle align=center>
+														New&nbsp;File&nbsp;
+													</td>
+												</tr>
+												<tr>
+													<td valign=middle align=center colspan=2>
+														<img border=0 src=images/downarrow.ico border=0>
+													</td>
+												</tr>
+											</table>
+										</td>
+										<td>
+											<table onmouseover="javascript:buttonhover('btnFileImport');" onmousedown="javascript:buttonpress('btnFileImport');" onmouseup="javascript:buttonup('btnFileImport','btnFileImport');" onmouseout="javascript:buttonleave('btnFileImport');" id="btnFileImport" class=button cellpadding=0 cellspacing=0>
+												<tr>
+													<td>
+														<img src=images/spacer.gif width=7>
+													</td>
+													<td valign=middle align=center>
+														<img border=0 src=images/import.ico>
+													</td>
+												</tr>
+												<tr>
+													<td>
+														<img src=images/spacer.gif width=7>
+													</td>
+													<td valign=middle align=center>
+														Import&nbsp;<br>File
+														<img border=0 src=images/downarrow.ico border=0>
+													</td>
+												</tr>
+											</table>
+										</td>
+										<td>
+											<table onmouseover="javascript:buttonhover('btnFileDownload');" onmousedown="javascript:buttonpress('btnFileDownload');" onmouseup="javascript:buttonup('btnFileDownload','btnFileDownload');" onmouseout="javascript:buttonleave('btnFileDownload');" id="btnFileDownload" class=button cellpadding=0 cellspacing=0>
+												<tr>
+													<td>
+														<img src=images/spacer.gif width=7>
+													</td>
+													<td valign=middle align=center>
+														<img border=0 src=images/export.ico>
+													</td>
+												</tr>
+												<tr>
+													<td>
+														<img src=images/spacer.gif width=7>
+													</td>
+													<td valign=middle align=center>
+														Download&nbsp;<br>File
+														<img border=0 src=images/downarrow.ico border=0>
+													</td>
+												</tr>
+											</table>
+										</td>
+										<td valign=middle align=center  width=100%>
+											<table cellpadding=0 cellspacing=0 class=buttondisabled>
+												<tr  onmouseover="javascript:buttonhover('btnFileDelete');" onmousedown="javascript:buttonpress('btnFileDelete');" onmouseup="javascript:buttonup('btnFileDelete','btnFileDelete');" onmouseout="javascript:buttonleave('btnFileDelete');" id="btnFileDelete" class=button>
+													<td>&nbsp;&nbsp;<img src=images/deletefile.ico border=0></td>
+													<td>&nbsp;&nbsp;Delete&nbsp;File&nbsp;&nbsp;</td>
+												</tr>
+												<tr  onmouseover="javascript:buttonhover('btnFileMove');" onmousedown="javascript:buttonpress('btnFileMove');" onmouseup="javascript:buttonup('btnFileMove','btnFileMove');" onmouseout="javascript:buttonleave('btnFileMove');" id="btnFileMove" class=button>
+													<td>&nbsp;&nbsp;<img src=images/movefile.ico border=0></td>
+													<td>&nbsp;&nbsp;Move&nbsp;File&nbsp;...&nbsp;&nbsp;</td>
+												</tr>
+												<tr  onmouseover="javascript:buttonhover('btnFileProperties');" onmousedown="javascript:buttonpress('btnFileProperties');" onmouseup="javascript:buttonup('btnFileProperties','btnFileProperties');" onmouseout="javascript:buttonleave('btnFileProperties');" id="btnFileProperties" class=button>
+													<td>&nbsp;&nbsp;<img src=images/property.ico border=0></td>
+													<td>&nbsp;&nbsp;Properties&nbsp;...&nbsp;&nbsp;</td>
+												</tr>												
+											</table>								
+										</td>
+									</tr>
+								</table>
+							</td>	
+					
+							<td class=buttondisabled>
+								<table class=buttondisabled cellpadding=0 cellspacing=0 width=100% onmouseover="javascript:menuhover('menuConnections')" onmouseout="javascript:menuleave('menuConnections')">
+									<tr>
+										<td>
+											<img src=images/spacer.gif width=3>
+										</td>
+										<td valign=middle align=center>
+											<img src=images/connection.ico border=0>
+										</td>
+									</tr>
+									<tr>
+										<td>
+											<img src=images/spacer.gif width=3>
+										</td>
+										<td valign=middle align=center>
+												Manage&nbsp;
+										</td>
+										
+									</tr>
+									<tr>
+										<td valign=middle align=center colspan=2>
+											<img border=0 src=images/downarrow.ico border=0>
+										</td>
+									</tr>
+								</table>
+							</td>
+							<td class=buttondisabled>
+								<table class=buttondisabled cellpadding=0 cellspacing=0 width=100% onmouseover="javascript:menuhover('menuSearch')" onmouseout="javascript:menuleave('menuSearch')">
+									<tr>
+										<td>
+											<img src=images/spacer.gif width=3>
+										</td>
+										<td valign=middle align=center>
+											<img src=images/find.ico border=0>
+										</td>
+									</tr>
+									<tr>
+										<td>
+											<img src=images/spacer.gif width=3>
+										</td>
+										<td valign=middle align=center>
+												Find
+										</td>
+										
+									</tr>
+									<tr>
+										<td valign=middle align=center colspan=2>
+											<img border=0 src=images/downarrow.ico border=0>
+										</td>
+									</tr>
+								</table>
+							</td>
+							
+							<td class=buttondisabled>
+								<table cellpadding=0 cellspacing=0 class=buttondisabled onmouseover="javascript:menuhover('menuView')" onmouseout="javascript:menuleave('menuView')">
+									<tr>
+										<td>&nbsp;&nbsp;<img src=images/sourcecode.ico border=0></td>
+										<td>&nbsp;&nbsp;Source&nbsp;Code&nbsp;&nbsp;</td>
+									</tr>
+									<tr>
+										<td>&nbsp;&nbsp;<img src=images/notes.ico border=0></td>
+										<td>&nbsp;&nbsp;Notes&nbsp;&nbsp;</td>
+									</tr>
+									<tr>
+										<td>&nbsp;&nbsp;<img src=images/comments.ico border=0></td>
+										<td>&nbsp;&nbsp;Comments&nbsp;&nbsp;</td>
+									</tr>												
+								</table>
+							</td>
+									
+							<td width="100%" class=button><img src="images/spacer.gif" border=0></td>
+						
+							
+						</tr>
+						
+						
+						<tr height=15>
+							<td class=menutitle id=menuFolder align=center onmouseover="javascript:menuhover('menuFolder')" onmouseout="javascript:menuleave('menuFolder')">
+								&nbsp;Folder
+							</td>
+							
+							<td class=menutitle id="menuFile" align=center onmouseover="javascript:menuhover('menuFile')" onmouseout="javascript:menuleave('menuFile')">
+								&nbsp;File
+							</td>
+								
+							<td class=menutitle id="menuConnections" align=center onmouseover="javascript:menuhover('menuConnections')" onmouseout="javascript:menuleave('menuConnections')">
+								&nbsp;Servers&nbsp;
+							</td>
+							
+							<td class=menutitle id="menuSearch" align=centeronmouseover="javascript:menuhover('menuSearch')" onmouseout="javascript:menuleave('menuSearch')">
+								&nbsp;Search&nbsp;
+							</td>
+							
+							<td class=menutitle id="menuView" align=center onmouseover="javascript:menuhover('menuView')" onmouseout="javascript:menuleave('menuView')">
+								&nbsp;View&nbsp;
+							</td>
+							
+							<td width="100%" class=menutitle><img src="images/spacer.gif" border=0></td>
+						
+						</tr>
+					</table>
+				</td>				
+			</tr>
+		</table>
+		
+	</BODY>
+</HTML>
